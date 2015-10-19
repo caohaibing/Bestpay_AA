@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/comfirm_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F6F7"
+    android:orientation="vertical" >
+	<LinearLayout
+        android:id="@+id/emptyData"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+        <TextView 
+            android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:textSize="16sp"
+        	android:gravity="center_horizontal"
+        	android:text="@string/empty_data"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/list_lyt"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:cacheColorHint="#00000000"
+            android:listSelector="@android:color/transparent"
+            android:divider="#F5F6F7" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loadind"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:layout_width="25dip"
+            android:layout_height="27dip"
+            android:indeterminateDrawable="@anim/lv_more_progress" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="18dip"
+            android:gravity="center_vertical"
+            android:text="正在加载中..."
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/not_more"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#e5f0f6"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="18dip"
+            android:gravity="center_vertical"
+            android:text="^_^就这么多啦~"
+            android:textSize="18sp" />
+    </LinearLayout>
+	<!-- 
+    <LinearLayout
+        android:id="@+id/have_more"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#e5f0f6"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="25dip"
+            android:layout_height="23dip"
+            android:layout_margin="2dip"
+            android:src="@drawable/arrow_down" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dip"
+            android:gravity="center_vertical"
+            android:text="加载更多......"
+            android:textSize="18sp" />
+    </LinearLayout>
+ -->
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="bestpay_theme" parent="android:style/Theme.Light">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowContentOverlay">@android:color/transparent</item>
+		<!-- <item name="android:buttonStyle">@style/custembtn_style_app</item> -->
+		<!-- <item name="android:windowBackground">@drawable/main_bg</item> -->
+		<!-- <item name="android:windowBackground">@color/bg_color</item> -->
+	</style>
+	
+	<style name="bestpay_aa_theme" parent="android:style/Theme.Dialog">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowContentOverlay">@android:color/transparent</item>
+		<!-- <item name="android:buttonStyle">@style/custembtn_style_app</item> -->
+		<!-- <item name="android:windowBackground">@drawable/main_bg</item> -->
+		<!-- <item name="android:windowBackground">@color/bg_color</item> -->
+	</style>
+
+
+	<!-- Base application theme is the default theme. -->
+	<style name="Theme" parent="android:Theme">
+	</style>
+
+	<!-- A theme for a custom dialog appearance. Here we use an ugly custom 
+		frame. -->
+	
+
+
+	<!-- Variation on our application theme that has a transparent background; 
+		this example completely removes the background, allowing the activity to 
+		decide how to composite. Also here we force the translucency ourself rather 
+		than making use of the built-in translucent theme. -->
+
+	
+</resources>

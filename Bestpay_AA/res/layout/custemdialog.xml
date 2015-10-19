@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:minWidth="300dp" android:layout_height="wrap_content">
+
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/dialog_aa_bg"
+	    android:orientation="vertical" >
+
+		<TextView
+		    android:id="@+id/title"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:textColor="@color/white" 
+		    android:gravity="center"
+		    android:textSize="16sp"
+		    android:layout_marginTop="10dp"
+		    android:text="提    示"/>
+
+		<TextView style="@style/DialogText" android:id="@+id/message"
+			android:paddingRight="0dip" android:scrollbars="vertical"
+			android:singleLine="false" android:maxLines="10" android:autoLink="web"
+			android:gravity="center_horizontal"
+			android:layout_marginTop="30dp" android:layout_marginLeft="25dip"
+			android:layout_marginRight="25dip" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:textColor="#626262"
+			android:layout_marginBottom="10dp"/>
+
+
+
+		<LinearLayout android:orientation="horizontal"
+			android:layout_marginBottom="30dp" android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+
+			<Button android:id="@+id/positiveButton"
+				android:layout_marginTop="13dip" android:layout_width="0dip"
+				android:layout_weight="1" android:layout_marginLeft="25dip"
+				android:background="@drawable/custembtn"
+				android:layout_marginRight="25dip" android:layout_height="wrap_content"
+				android:singleLine="true" />
+
+			<Button android:id="@+id/negativeButton"
+			    android:textColor="#626262"
+				android:layout_marginTop="13dip" android:layout_width="0dip"
+				android:layout_weight="1" android:layout_marginLeft="25dip"
+				android:background="@drawable/custem_gray_btn"
+				android:layout_marginRight="25dip" android:layout_height="wrap_content"
+				android:singleLine="true" />
+
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,36 @@
+# view AndroidManifest.xml #generated:105
+-keep class com.bestpay_aa.AADetailActivityGroup { <init>(...); }
+
+# view AndroidManifest.xml #generated:35
+-keep class com.bestpay_aa.AAGatheringActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:72
+-keep class com.bestpay_aa.AAGatheringDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:81
+-keep class com.bestpay_aa.AAGatheringSponsorActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:89
+-keep class com.bestpay_aa.AAGatheringSureActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:43
+-keep class com.bestpay_aa.AAPaymentActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:97
+-keep class com.bestpay_aa.AAPaymentPersonActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:55
+-keep class com.bestpay_aa.AaPaymentItemActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:63
+-keep class com.bestpay_aa.CopyContactsListMultiple { <init>(...); }
+
+# view AndroidManifest.xml #generated:21
+-keep class com.bestpay_aa.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:15
+-keep class com.bestpay_aa.util.MyApp { <init>(...); }
+
+# view res/layout/aa_gathering_pay_details.xml #generated:254
+-keep class com.bestpay_aa.view.PassInput { <init>(...); }
+

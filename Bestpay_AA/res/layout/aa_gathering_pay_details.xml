@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/comfirm_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/aa_bestpay_topbar"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <TextView
+                android:id="@+id/aaTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:shadowColor="#666666"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:singleLine="true"
+                android:text="账单详情"
+                android:textColor="@color/color_mw_top"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/sv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/innerframe2"
+                    android:orientation="vertical">
+					<LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" 
+                        android:padding="10dp">
+                           <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                          	android:text="@string/gatherNo"
+                            android:textColor="#626262"
+                            android:textSize="16sp" />
+                        <TextView
+                           android:id="@+id/gatherNo"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginLeft="7dp"
+                           android:gravity="center_vertical"
+                           android:textColor="#626262"
+                           android:textSize="16sp" />
+                    </LinearLayout>
+                    <View 
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/dividerline" />
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" 
+                        android:padding="10dp">
+                           <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                          	android:text="主"
+                            android:textColor="#626262"
+                            android:textSize="16sp" />
+                            <TextView
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="wrap_content"
+	                          	android:text="空格"
+	                          	android:visibility="invisible"
+	                            android:textSize="16sp" />
+                            <TextView
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="wrap_content"
+	                          	android:text="题:"
+	                            android:textColor="#626262"
+	                            android:textSize="16sp" />
+                        <TextView
+                           android:id="@+id/theme"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginLeft="7dp"
+                           android:gravity="center_vertical"
+                           android:textColor="#626262"
+                           android:textSize="16sp" />
+                    </LinearLayout>
+					<View 
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/dividerline" 
+                        android:padding="10dp"/>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="人均金额:"
+                            android:textColor="#626262"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/perMoney"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:textColor="#FC9544"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                    <View 
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/dividerline" />
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="发起时间:"
+                            android:textColor="#626262"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/transDate"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:textColor="#626262"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                    <View 
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/dividerline" />
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/failureDateText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="过期时间:"
+                            android:textColor="#626262"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/failureDate"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:textColor="#626262"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                    <View 
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/dividerline" />
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="备"
+                            android:textColor="#626262"
+                            android:textSize="16sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                          	android:text="空格"
+                          	android:visibility="invisible"
+                            android:textSize="16sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="注:"
+                            android:textColor="#626262"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/remark"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:textColor="#626262"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+	
+                <LinearLayout
+                    android:id="@+id/paylyt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="30dip"
+                    android:layout_marginTop="15dip"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="支付密码：" />
+						 <RelativeLayout
+		                    android:layout_width="fill_parent"
+		                    android:layout_height="wrap_content"
+		                    android:gravity="center"
+		                    android:orientation="horizontal" >
+	                        <com.bestpay_aa.view.PassInput
+		                        android:id="@+id/password_xls"
+		                        android:layout_width="fill_parent"
+		                        android:layout_height="40dip" />
+	
+	                   		 <Button
+		                        android:id="@+id/del_wty"
+		                        android:layout_width="40dp"
+		                        android:layout_height="40dp"
+		                        android:layout_alignParentRight="true"
+		                        android:background="@drawable/del" />
+                   		 </RelativeLayout>
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/payButton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/custembtn"
+                        android:singleLine="true"
+                        android:text="确认支付"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rechargelyt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="30dip"
+                    android:layout_marginTop="10dip"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:background="@drawable/innerframe2"
+                    android:visibility="gone">
+					<ImageView
+					    android:layout_marginTop="10dp"
+					    android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" 
+					    android:src="@drawable/cashnotenoungh"
+					    android:layout_gravity="center"/>
+                    <TextView
+                        android:id="@+id/aa_pay_notice"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#626262"
+                        android:textSize="16sp" 
+                        android:layout_marginTop="10dp"
+                        android:text="您账户可提现余额不足啦，快去充值吧！" />
+
+                    <Button
+                        android:id="@+id/rechargeButton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/custembtn"
+                        android:singleLine="true"
+                        android:text="充值"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

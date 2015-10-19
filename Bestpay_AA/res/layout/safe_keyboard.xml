@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_weight="1.0" android:background="@drawable/my_key_bg1"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:orientation="vertical"
+	>
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_marginTop="35dip" android:layout_width="fill_parent"
+		android:layout_marginRight="5dip"
+		android:layout_marginLeft="5dip">
+		
+		<LinearLayout android:layout_height="50dp" 
+		    android:layout_width="wrap_content"
+		    android:layout_weight="1">
+			<Button android:id="@+id/payment_dial_num1_btn"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_weight="1" android:background="@drawable/mykey_num_bg"
+				android:textSize="25sp" android:textColor="@color/white"
+				android:layout_marginRight="3dp"></Button>
+			<Button android:id="@+id/payment_dial_num2_btn"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_weight="1" android:background="@drawable/mykey_num_bg"
+				android:textSize="25sp" android:textColor="@color/white"
+				android:layout_marginRight="3dp"></Button>
+			<Button android:id="@+id/payment_dial_num3_btn"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_weight="1" android:background="@drawable/mykey_num_bg"
+				android:textSize="25sp" android:textColor="@color/white"
+				android:layout_marginRight="3dp"></Button>
+			<Button android:id="@+id/payment_dial_num4_btn"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_weight="1" android:background="@drawable/mykey_num_bg"
+				android:textSize="25sp" android:textColor="@color/white"
+				android:layout_marginRight="3dp"></Button>
+			<Button android:id="@+id/payment_dial_num5_btn"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_weight="1" android:background="@drawable/mykey_num_bg"
+				android:textSize="25sp" android:textColor="@color/white"
+				android:layout_marginRight="3dp"></Button>
+		</LinearLayout>
+		
+		<LinearLayout android:layout_height="50dp" 
+		    android:layout_width="80dp">
+		    <Button android:id="@+id/payment_dial_num_dot_btn"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_weight="1" android:background="@drawable/mykey_num_bg"
+				android:textSize="25sp" android:textColor="@color/white"
+				android:layout_marginRight="3dp" android:visibility="gone"></Button>
+			<Button android:id="@+id/payment_dial_num_delete_btn"
+				android:layout_width="wrap_content" android:layout_height="fill_parent"
+				android:layout_weight="1" android:background="@drawable/mykey_delete_big_bg"></Button>
+		</LinearLayout>		
+	</LinearLayout>
+
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:layout_marginRight="5dip"
+		android:layout_marginLeft="5dip"
+		android:layout_marginTop="5dp"
+		android:layout_marginBottom="10dip">
+		
+		<LinearLayout android:layout_height="50dp" 
+		    android:layout_width="wrap_content"
+		    android:layout_weight="1">
+			<Button android:id="@+id/payment_dial_num6_btn"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_weight="1" android:background="@drawable/mykey_num_bg"
+				android:textSize="25sp" android:textColor="@color/white"
+				android:layout_marginRight="3dp"></Button>
+			<Button android:id="@+id/payment_dial_num7_btn"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_weight="1" android:background="@drawable/mykey_num_bg"
+				android:textSize="25sp" android:textColor="@color/white"
+				android:layout_marginRight="3dp"></Button>
+			<Button android:id="@+id/payment_dial_num8_btn"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_weight="1" android:background="@drawable/mykey_num_bg"
+				android:textSize="25sp" android:textColor="@color/white"
+				android:layout_marginRight="3dp"></Button>
+			<Button android:id="@+id/payment_dial_num9_btn"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_weight="1" android:background="@drawable/mykey_num_bg"
+				android:textSize="25sp" android:textColor="@color/white"
+				android:layout_marginRight="3dp"></Button>
+			<Button android:id="@+id/payment_dial_num0_btn"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_weight="1" android:background="@drawable/mykey_num_bg"
+				android:textSize="25sp" android:textColor="@color/white"
+				android:layout_marginRight="3dp"></Button>
+		</LinearLayout>
+		
+		<LinearLayout android:layout_height="50dp" 
+		    android:layout_width="80dp">
+		   <Button android:id="@+id/payment_dial_num_finish_btn"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:background="@drawable/mykey_sure_bg"></Button>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

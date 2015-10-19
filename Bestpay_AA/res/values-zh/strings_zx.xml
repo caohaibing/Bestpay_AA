@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   	<!-- 不可转提示语 -->
+	<!-- 交易超过当日限额  Z00015 -->
+	<string name="text5">超出交易限额</string>
+	<string name="text51">\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020您当前已超出当日转账限额，您可以在更多-设置页面查看交易限额详情，或者致电4008011888查询。</string>
+
+	<!-- 转账转出方为非实名用户  Z00018-->
+	<string name="text6">非实名用户</string>
+	<string name="text61">\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020为了您账户金额的安全，请您补全当前实名认证信息或高级实名认证后再使用AA收款，感谢您的理解。如有疑问可致电4008011888咨询。</string>
+	
+	<!-- 交易超过当笔限额  Z00032-->
+	<string name="text7">超出交易限额</string>
+	<string name="text71">\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020您当前已超出单笔转账限额，您可以在更多-设置页面查看交易限额详情，或者致电4008011888查询。</string>
+	
+	<!-- 交易超过当月限额  Z00033 -->
+	<string name="text8">超出交易限额</string>
+	<string name="text81">\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020您当前已超出当月转账限额，您可以在更多-设置页面查看交易限额详情，或者致电4008011888查询。</string>
+	
+	<!-- 余额不足 -->
+	<string name="balance_not_enough">您当前的账户余额不足!</string>
+	<string name="cashbalance_not_enough">发起方要求仅收取可提现余额，\n您当前的账户可提现余额不足！</string>
+	
+	<!-- 付款没有记录 -->
+	<string name="empty_data">暂时没有付款记录哦</string>
+	<!-- 结单提示 -->
+	<string name="notice">已超出7天有效期，结单啦！</string>
+	<!-- 再次提醒参与人付款part1 -->
+	<string name="sms_cuikuan1">亲，那天我们一起的AA，人均金额</string>
+	<!-- 再次提醒参与人付款part2 -->
+	<string name="sms_cuikuan2">元，您A了吗？马上登录翼支付客户端速速还钱去（下载请戳：m.bestpay.com.cn）。如有疑问，请致电4008011888或10000。[爱生活，翼支付]</string>
+	<!-- 发起人 -->
+	<string name="gatherNo">发\u0020\u0020起\u0020\u0020人:</string>
+	
+</resources>

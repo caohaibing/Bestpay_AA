@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/comfirm_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/aa_bestpay_topbar"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <TextView
+                android:id="@+id/aaTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:shadowColor="#666666"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:singleLine="true"
+                android:text="发起收款"
+                android:textColor="@color/color_mw_top"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/sv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/innerframe"
+                    android:orientation="vertical"
+                    android:padding="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="15dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="主"
+                            android:textColor="#626262"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="空格"
+                            android:textSize="16sp"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="题:"
+                            android:textColor="#626262"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/theme"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:background="@drawable/edit_bg_2"
+                            android:singleLine="true"
+                            android:textColor="#626262"
+                            android:textSize="16sp" 
+                            android:maxLength="10"/>
+                    </LinearLayout>
+                    
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal"
+                        android:visibility="visible" >
+                        
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="最多参与:"
+                            android:textColor="#626262"
+                            android:textSize="16sp"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/thme_recharge"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:textColor="#FF0000"
+                            android:textSize="16sp"
+                            android:visibility="visible" 
+                            android:gravity="left"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="15dp"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="主题时间:"
+                            android:textColor="#626262"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/themetime"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:background="@drawable/edit_bg_2"
+                            android:singleLine="true"
+                            android:textColor="#626262"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="资  金  源:"
+                            android:textColor="#626262"
+                            android:textSize="16sp" />
+
+                        <Spinner
+                            android:id="@+id/spinner"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:background="@drawable/edit_bg_2" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="总        额:"
+                            android:textColor="#626262"
+                            android:textSize="16sp" 
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp" 
+                            >
+
+                            <EditText
+                                android:id="@+id/allmoney"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edit_bg_2"
+                                android:inputType="numberDecimal"
+                                android:textColor="@color/color_money"
+                                android:textSize="16sp" 
+                                android:maxLength="8"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="32dp"
+                                android:layout_alignParentRight="true"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:paddingRight="10dp"
+                                android:text="  元"
+                                android:textColor="#626262"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal"
+                        android:visibility="visible" >
+                        
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="最多参与:"
+                            android:textColor="#626262"
+                            android:textSize="16sp"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/money_recharge"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:textColor="#FF0000"
+                            android:textSize="16sp"
+                            android:visibility="visible" 
+                            android:gravity="left"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="添加人员:"
+                            android:textColor="#626262"
+                            android:textSize="16sp" />
+
+
+                        <RelativeLayout
+                            android:id="@+id/add_person"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:background="@drawable/edit_bg_2"
+                            android:gravity="center_vertical" >
+
+                            <EditText
+                                android:id="@+id/participantsNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:focusable="false"
+                                android:visibility="gone" />
+
+                            <EditText
+                                android:id="@+id/get_person"
+                                style="@style/EditText1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="false"
+                                android:textColor="#626262"
+                                android:textSize="16sp"
+                                android:visibility="visible" 
+                                android:drawableRight="@drawable/btn_background_myadvise"
+                                />
+                            
+                        </RelativeLayout>
+                       
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_limit2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="invisible" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="最多参与:"
+                            android:textColor="#626262"
+                            android:textSize="16sp"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/participantsToastNum"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:text="一次AA最多30人参与"
+                            android:textColor="#FF0000"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="备"
+                            android:textColor="#626262"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="空格"
+                            android:textSize="16sp"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="注:"
+                            android:textColor="#626262"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/remark"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:background="@drawable/edit_bg_2"
+                            android:gravity="top|left"
+                            android:hint="选填"
+                            android:inputType="textMultiLine"
+                            android:lines="5"
+                            android:scrollHorizontally="false"
+                            android:textColor="#626262"
+                            android:textSize="16sp" 
+                            android:maxLength="50"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:gravity="right"
+                        android:orientation="horizontal" 
+                        android:id="@+id/linear_personAndMoney"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="向其他"
+                            android:textColor="#626262"
+                            android:textSize="16sp" />
+                        
+                        <TextView
+                            android:id="@+id/personAndMoney_person"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5"
+                            android:textColor="@color/color_money"
+                            android:textSize="16sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="人，"
+                            android:textColor="#626262"
+                            android:textSize="16sp" />
+                        
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="每人收"
+                            android:textColor="#626262"
+                            android:textSize="16sp" />
+                        
+                        <TextView
+                            android:id="@+id/personAndMoney_money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5"
+                            android:textColor="@color/color_money"
+                            android:textSize="16sp" />
+                        
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="元"
+                            android:textColor="#626262"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                    
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:gravity="right"
+                        android:orientation="horizontal" 
+                        android:id="@+id/linear_personAndMoney_hint"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="每人平均收款金额不能少于"
+                            android:textColor="#FF0000"
+                            android:textSize="16sp" />
+                        
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:textColor="#FF0000"
+                            android:textSize="16sp" />
+                        
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="元"
+                            android:textColor="#FF0000"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                    
+                    
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/positiveButton_lyt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="30dip"
+                    android:layout_marginTop="15dip"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/positiveButton"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/scan_cancel"
+                        android:singleLine="true"
+                        android:text="下一步"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

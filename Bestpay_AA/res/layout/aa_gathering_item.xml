@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/listview_item_bg"
+        android:gravity="center_vertical"
+        android:orientation="vertical" 
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp">
+
+
+            <ImageView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/image_share"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                />
+            
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dip" 
+            android:layout_below="@id/image_share">
+
+            
+            <TextView
+                android:id="@+id/theme"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:text="主题"
+                android:textColor="#2e2e2e"
+                android:textSize="18dip" 
+                android:singleLine="true"
+                />
+
+            <TextView
+                android:id="@+id/perMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:text="- 25.00 元"
+                android:textColor="#626262"
+                android:textSize="18sp" />
+            
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/image_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/faild"
+            android:visibility="visible" />
+        
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/transDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:text="2013-06-06 11:04:00"
+                android:textColor="#626262"
+                android:textSize="18dip" />
+
+            
+            <ImageView
+            android:id="@+id/image_state_k"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone" 
+            />
+            
+            <TextView
+                android:id="@+id/transStat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:text="成功"
+                android:textColor="#626262"
+                android:textSize="18dip" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="mw_dialog_title">提    示</string>
+	<string name="mw_sure">确认</string>
+	<string name="m_account_net_bank_dialog_note3">请输入账单总额</string>
+    <string name="m_account_net_bank_dialog_note5">请输入正确的账单总额</string>
+    <string name="m_account_net_bank_dialog_note6">账单总额最小单位为分,请确认。</string>
+    <string name="m_start_with_zero">账单总额错误，请确保数值准确。</string>
+    <string name="mw_share_msg">#AA收款#手机上的AA，又快又好用，潇洒聚会之后再也不用挨个数钞票了，再也不用为找零钱发愁了。下载请戳：m.bestpay.com.cn，智慧生活，精彩无限，更多惊喜优惠尽在@翼支付！</string>
+	<string-array name="mw_spinnername">
+        <item>全额资金</item>
+        <item>可提现资金 </item>
+    </string-array>
+</resources>

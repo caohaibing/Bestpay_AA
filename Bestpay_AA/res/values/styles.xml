@@ -1,0 +1,115 @@
+<resources>
+
+    <style name="custembtn_style_app" parent="@android:style/Widget.Button">
+		<item name="android:background">@drawable/custembtn</item>
+		<item name="android:gravity">center_vertical|center_horizontal</item>
+		<item name="android:textColor">#FFFFFF</item>
+		<item name="android:padding">10dip</item>
+		
+		<item name="android:textSize">16dip</item>
+	</style>
+
+	<style name="menu_text" parent="@android:Widget.TextView">
+		<item name="android:textSize">20sp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">#663300</item>
+		<item name="android:paddingRight">40dip</item>
+		<item name="android:paddingLeft">20dip</item>
+		<item name="android:paddingTop">10dip</item>
+		<item name="android:paddingBottom">10dip</item>
+	</style>
+
+	<style name="DialogText">
+		<item name="android:textSize">16sp</item>
+		<item name="android:background">@android:color/transparent</item>
+		<item name="android:windowBackground">@null</item>
+		<item name="android:textColor">#0a788f</item>
+	</style>
+
+	<style name="DialogText.Title">
+		<item name="android:textSize">20sp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">#FFFFFF</item>
+	</style>
+	<style name="Dialog" parent="android:style/Theme.Dialog">
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowIsFloating">true</item>
+
+	</style>
+
+	<style name="accountText">
+		<item name="android:textSize">20sp</item>
+		<item name="android:textColor">#000000</item>
+	</style>
+
+	<style name="paymentTypeText">
+		<item name="android:textSize">24sp</item>
+		<item name="android:textColor">#0a788f</item>
+	</style>
+
+	<style name="title_top">
+		<item name="android:textSize">22sp</item>
+		<item name="android:textColor">#0a788f</item>
+	</style>
+
+	<style name="app"></style>
+	<style name="app.icon">
+		<item name="android:layout_marginTop">10dip</item>
+		<item name="android:layout_marginLeft">10dip</item>
+		<item name="android:layout_marginRight">10dip</item>
+		<item name="android:layout_marginBottom">10dip</item>
+	</style>
+	<style name="app.name">
+		<item name="android:textSize">22sp</item>
+		<item name="android:textColor">#0a788f</item>
+		<item name="android:paddingTop">5dip</item>
+	</style>
+	<style name="app.provider">
+		<item name="android:textSize">18sp</item>
+		<item name="android:paddingTop">5dip</item>
+		<item name="android:paddingBottom">2dip</item>
+		<item name="android:textColor">#0a788f</item>
+	</style>
+<!-- 有按钮的标题文字样式，文字有阴影效果 -->
+	<style
+		name="TextViewShadow">
+			<item
+			name="android:textSize">18sp</item>
+		<item
+			name="android:textStyle">bold</item>
+		<item
+			name="android:singleLine">true</item>
+		<item
+			name="android:textColor">@color/white</item>
+		<item
+			name="android:shadowColor">#666666</item>
+		<item
+			name="android:shadowDx">1</item>
+		<item
+			name="android:shadowDy">1</item>
+		<item
+			name="android:shadowRadius">1</item>
+		<item
+			name="android:layout_width">fill_parent</item>
+		<item
+			name="android:layout_height">wrap_content</item>
+		<item
+			name="android:gravity">center</item>
+	</style>
+	 <style name="TextView">
+		<item name="android:textSize">16sp</item>
+		<item name="android:background">@android:color/transparent</item>
+		<item name="android:windowBackground">@null</item>
+		<item name="android:textColor">@color/dimgrey</item>
+	</style>
+	
+	 <!-- 输入框 -->
+	<style name="EditText1">
+		<item name="android:textSize">16sp</item>
+		<item name="android:background">@android:color/transparent</item>
+		<item name="android:windowBackground">@null</item>
+		<item name="android:textColor">@android:color/black</item>
+	</style>
+
+</resources>

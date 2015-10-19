@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+
+	<drawable name="red_color">#7f00</drawable>
+	<drawable name="blue_color">#770000ff</drawable>
+	<drawable name="green">#7700ff00</drawable>
+	<drawable name="yellow">#77ffff00</drawable>
+	<drawable name="screen_background_black">#ff000000</drawable>
+	<drawable name="translucent_background">#e0000000</drawable>
+	<drawable name="transparent_background">#00000000</drawable>
+	<drawable name="lightseagreen">#20B2AA</drawable>
+
+
+
+	<color name="lightseagreen">#20B2AA</color>
+	<color name="yellow">#77ffff00</color>
+	<color name="red">#FF0000</color>
+	<color name="pink">#FF2EFF</color>
+	<color name="blue">#0000FF</color>
+	<color name="darkgreen">#008800</color>
+	<color name="white">#FFFFFF</color>
+	<color name="black">#000105</color>
+	<color name="touming">#00000000</color>
+	<color name="huise">#A9A9A9</color>
+	<color name="lightblue">#ADD8E6</color><!--亮蓝色 -->
+	<color name="changshang">#0a788f</color>
+	<color name="note">#737373</color>
+	<color name="bg_color">#f5f6f7</color><!-- 背景色 -->
+	<color name="hintcolor">#EF7D34</color>
+	<color name="contents_text">#ff000000</color>
+  <color name="encode_view">#ffffffff</color>
+  <color name="help_button_view">#ffcccccc</color>
+  <color name="help_view">#ff404040</color>
+  <color name="possible_result_points">#c0ffff00</color>  
+  <color name="result_image_border">#ffffffff</color>
+  <color name="result_minor_text">#ffc0c0c0</color>
+  <color name="result_points">#c000ff00</color>
+  <color name="result_text">#ffffffff</color>
+  <color name="result_view">#b0000000</color>
+  <color name="sbc_header_text">#ff808080</color>
+  <color name="sbc_header_view">#ffffffff</color>
+  <color name="sbc_list_item">#fffff0e0</color>
+  <color name="sbc_layout_view">#ffffffff</color>
+  <color name="sbc_page_number_text">#ff000000</color>
+  <color name="sbc_snippet_text">#ff4b4b4b</color>
+  <color name="share_text">#ff000000</color>
+  <color name="share_view">#ffffffff</color>
+  <color name="status_view">#50000000</color>
+  <color name="status_text">#ffffffff</color>
+  <color name="transparent">#00000000</color>
+  <color name="viewfinder_frame">#ff000000</color>
+  <color name="viewfinder_laser">#ffff0000</color>
+  <color name="viewfinder_mask">#60000000</color>
+  <color name="pay_tras">#2472a0</color>
+  <color name="dimgrey">#696969</color><!--暗灰色 -->
+  <!-- 90%透明 -->
+  <color name="transparent_nine">#E5000000</color>
+  <!-- 80%透明 -->
+  <color name="transparent_eight">#cc000000</color>
+  <!-- 60%透明 -->
+  <color name="transparent_six">#99000000</color>
+  <!-- 50%透明 -->
+  <color name="transparent_five">#7f000000</color>
+  <!-- 全透明 -->
+  <color name="transparent_all">#00000000</color>
+  <!-- 10%透明 -->
+  <color name="transparent_ten">#19000000</color>
+  <!-- 40%白色透明 -->	
+  <color name="transparent_four">#66ffffff</color>
+
+  
+  <color name="color_money">#ff8a00</color>
+  <color name="shake_nomal">#a5a0a0</color>
+  <color name="shake_press">#ee784e</color>
+  <!-- 顶部标题字体颜色 -->
+  <color name="color_mw_top">#a7c1e9</color>
+  <!-- 我要收、付的字体显示 -->
+  <color name="color_mw_text_p">#ff8a00</color>
+  <color name="color_mw_text_n">#2e2e2e</color>
+  
+</resources>
